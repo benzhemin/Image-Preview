@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ZXRPhotoCell">
+            <rect key="frame" x="0.0" y="0.0" width="221" height="212"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="221" height="212"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7sD-LK-qyF">
+                        <rect key="frame" x="0.0" y="0.0" width="221" height="212"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7sD-LK-qyF" secondAttribute="trailing" id="LLC-3T-9OG"/>
+                <constraint firstItem="7sD-LK-qyF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PrS-Lp-oS5"/>
+                <constraint firstAttribute="bottom" secondItem="7sD-LK-qyF" secondAttribute="bottom" id="deq-Ji-5GY"/>
+                <constraint firstItem="7sD-LK-qyF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="m39-ng-318"/>
+            </constraints>
+            <size key="customSize" width="221" height="212"/>
+            <connections>
+                <outlet property="PhotoImageView" destination="7sD-LK-qyF" id="L8D-6y-wZE"/>
+            </connections>
+            <point key="canvasLocation" x="255.5" y="336"/>
+        </collectionViewCell>
+    </objects>
+</document>
