@@ -47,7 +47,7 @@
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     NSInteger count = [self.collectionView numberOfItemsInSection:0];
-    CGFloat radius = 70;
+    CGFloat radius = 120;
     // 圆心的位置
     CGFloat oX = self.collectionView.frame.size.width * 0.5;
     CGFloat oY = self.collectionView.frame.size.height * 0.5;

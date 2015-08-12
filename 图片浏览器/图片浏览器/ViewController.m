@@ -38,14 +38,14 @@ static NSString *const CellIdentifier = @"cell";
     
     // 0.设置
     ZXRLineLayout *layout = [[ZXRLineLayout alloc] init];
-    layout.itemSize = CGSizeMake(100, 100);
+    layout.itemSize = CGSizeMake(150, 150);
     
     
     // 1.创建
     CGFloat x = 0;
-    CGFloat y = 200;
+    CGFloat y = 100;
     CGFloat w = self.view.frame.size.width;
-    CGFloat h = 200;
+    CGFloat h = 300;
     UICollectionView *contentView = [[UICollectionView alloc] initWithFrame:CGRectMake(x, y, w, h) collectionViewLayout:layout];
     contentView.dataSource = self;
     [self.view addSubview:contentView];
@@ -61,7 +61,7 @@ static NSString *const CellIdentifier = @"cell";
         [self.contentView setCollectionViewLayout:[[ZXRCircleLayout alloc] init] animated:YES];
     } else {
         ZXRLineLayout *layout = [[ZXRLineLayout alloc] init];
-        layout.itemSize = CGSizeMake(100, 100);
+        layout.itemSize = CGSizeMake(150, 150);
         [self.contentView setCollectionViewLayout:layout animated:YES];
     }
 }
